@@ -128,6 +128,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\_Scripts\Testfield\Units Classes\Core.cs" />
     <Compile Include="Assets\_Scripts\Movement.cs" />
+    <Compile Include="Assets\HPSize.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Side projects\Challenge 1\Scripts\PlayerControllerX.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.6.17\Cinemachine Example Scenes\Scenes\3rdPersonWithAimMode\ActivateOnKeypress.cs" />
