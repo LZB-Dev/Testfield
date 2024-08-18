@@ -15,18 +15,34 @@ public class HUD : MonoBehaviour
         playerRB.GetComponent<Rigidbody>();
     }
 
+    private void SpeedUpdate(TextMeshProUGUI speedometer, Rigidbody playerRB)
+    {
+        speedometer.SetText($" {Mathf.RoundToInt(playerRB.velocity.magnitude * 2.237f)} km/h");
+    }
+
     private void UIColorChange(TextMeshProUGUI element, Color color)
     {
         element.color = color;
     }
 
-    void Update()
+    private void AmmoUpdate(TextMeshProUGUI ammo)
     {
-        speedometer.SetText($" {Mathf.RoundToInt(playerRB.velocity.magnitude * 2.237f)} km/h");
         PlayerController_InputSystem Info = player.GetComponent<PlayerController_InputSystem>();
         ammo.SetText($"[{Info.ammoCurrent}/{Info.ammoMagazine}]");
         if (Info.ammoCurrent > 19) { UIColorChange(ammo, Color.white); }
         else if (Info.ammoCurrent <= 19 && Info.ammoCurrent > 0) { UIColorChange(ammo, Color.yellow); }
         else if (Info.ammoCurrent == 0) { UIColorChange(ammo, Color.red); }
+    }
+
+    private void HPBar()
+    {
+
+    }
+
+
+    void Update()
+    {
+        SpeedUpdate(speedometer, playerRB);
+        AmmoUpdate(ammo);
     }
 }
