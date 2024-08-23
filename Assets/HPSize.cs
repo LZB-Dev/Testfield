@@ -1,29 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class HPSize : MonoBehaviour
 {
-    [SerializeField] int maxHealth;
-    [SerializeField] int maxShield;
-    [SerializeField] RectTransform Bar;
-    [SerializeField] RectTransform Health;
-    [SerializeField] RectTransform Shield;
+    [SerializeField] Image shieldBar;  // —сылка на Image, представл€ющий щит
+    [SerializeField] Image healthBar;  // —сылка на Image, представл€ющий здоровье
 
-    public void HPBar()
+    public int maxShield = 100;
+    public int maxHealth = 100;
+
+    private int curentHealth;
+    private int curentShield;
+
+    private void Start()
     {
-        Bar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 210*3);
-        Health.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 100*3);
-        Shield.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 100* 3);
+        curentHealth = maxHealth;
+        curentShield = maxShield;
     }
 
-    void Start()
+    private void ShieldBarMovement()
     {
-
+        float HPX = healthBar.rectTransform.rect.x;
+        float HPW = healthBar.rectTransform.rect.width;
+        shieldBar.rectTransform.position = new Vector2(healthBar.rectTransform.position.x + HPW / 2, shieldBar.rectTransform.position.y);
     }
 
-    void Update()
+    private void UpdateBars()
     {
-        HPBar();
+        Debug.Log($"FillAmount - {healthBar.fillAmount}, maxHealth - {maxHealth}, curentHealth - {curentHealth}");
+        //healthBar.
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        curentHealth -= damageAmount;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            TakeDamage(10);
+            UpdateBars();
+            ShieldBarMovement();
+        }
+        else if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            TakeDamage(-10);
+            UpdateBars();
+            ShieldBarMovement();
+        }
     }
 }
