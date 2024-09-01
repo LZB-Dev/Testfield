@@ -5,14 +5,13 @@ using UnityEngine.InputSystem;
 public class PlayerController_InputSystem : MonoBehaviour
 {
     #region Variables
-    #region Movement vars
+#region Movement vars
     [SerializeField] private bool isBoosting = false;
 
     [SerializeField] private float playerSpeed = 800f; 
     [SerializeField][Range(5f, 1000f)] private float speedLimit = 7f; 
     [SerializeField][Range(0.1f, 3f)] private float limitX = 1.5f;
     [SerializeField] private float rotationSpeed = 7f;
-
     //private Vector3 playerVelocity;
     #endregion
 
@@ -22,7 +21,7 @@ public class PlayerController_InputSystem : MonoBehaviour
     //private bool groundedPlayer;
     #endregion
 
-    #region Gun Specifications
+#region Gun Specifications
     [SerializeField] private float bulletMaxDistance = 40f;
     [SerializeField] public int ammoMagazine = 40;
     [SerializeField] public int ammoCurrent { get; set; }
