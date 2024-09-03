@@ -6,7 +6,6 @@ using TMPro;
 public class HPSize : MonoBehaviour
 {
     [SerializeField] Slider AreaHealthSlider, AreaShieldSlider;
-    [SerializeField] Image FillHealth, FillShield;
     [SerializeField] TextMeshProUGUI TextHealth, TextShield;
     private RectTransform AreaHealth, AreaShield;
     private RectTransform Bar;
@@ -23,23 +22,37 @@ public class HPSize : MonoBehaviour
 
     private void Start()
     {
-        Bar.sizeDelta = new Vector2(maxHealth + maxShield, Bar.rect.height);
-        AreaHealth.sizeDelta = new Vector2(maxHealth, 1);
-        AreaShield.sizeDelta = new Vector2(maxShield, 1);
-        AreaHealthSlider.maxValue = maxHealth;
-        AreaShieldSlider.maxValue = maxShield;
+        Presetting();
+    }
+
+    private void Presetting()
+    {
         currentHealth = maxHealth;
         currentShield = maxShield;
+        AreaHealthSlider.maxValue = maxHealth;
+        AreaShieldSlider.maxValue = maxShield;
+        UpdateBars();
         UpdateText();
-        Debug.Log($"ASposX[{AreaShield.localPosition.x}] - (AHSmax[{AreaHealthSlider.maxValue}] - AHSval[{AreaHealthSlider.value}]) = ASpos[{AreaShield.localPosition}]");
-
+        BarResize();
     }
 
     private void UpdateAreaPosition()
     {
-        AreaShield.localPosition = 
-            new Vector2(AreaHealthSlider.value, AreaShield.localPosition.y);
-        Debug.Log($"AHSval[{AreaHealthSlider.value}]) = ASpos[{AreaShield.localPosition}]" );
+        float HealthWidth = Bar.rect.width / 100f * (100f / (AreaHealthSlider.maxValue + AreaShieldSlider.maxValue) * AreaHealthSlider.maxValue);
+        AreaShield.localPosition = new Vector2(HealthWidth / AreaHealthSlider.maxValue * AreaHealthSlider.value, 0);
+        //Debug.Log($"AS pos = {AreaShield.localPosition} - x = {AreaShield.localPosition.x}, y = {AreaShield.localPosition.y}, z = {AreaShield.localPosition.z}");
+        
+    }
+
+    private void BarResize()
+    {
+        float HealthWidth = Bar.rect.width / 100f * (100f / (AreaHealthSlider.maxValue + AreaShieldSlider.maxValue) * AreaHealthSlider.maxValue);
+        AreaHealth.sizeDelta = new Vector2(HealthWidth, AreaHealth.sizeDelta.y);
+        float ShieldWidth = Bar.rect.width - HealthWidth;
+        AreaShield.sizeDelta = new Vector2(ShieldWidth, AreaShield.sizeDelta.y);
+        //Debug.Log($"{Bar.rect.width} / 100 * ( 100 / ({AreaHealthSlider.maxValue} + {AreaShieldSlider.maxValue}) * {AreaHealthSlider.maxValue}) = {HealthWidth}" +
+        //    $"\nBarWidth / 100 * ((AHS-max + ASS-max) / 100 * AHS-max) = HealthWidth");
+        AreaShield.localPosition = new Vector2(HealthWidth / AreaHealthSlider.maxValue * AreaHealthSlider.value, 0);
     }
 
     private void UpdateBars()
