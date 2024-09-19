@@ -1087,6 +1087,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Coffee.SoftMaskForUGUI.Editor.csproj">
+      <Project>{E8072140-15E3-2635-BF6B-ABD1D3BD5835}</Project>
+      <Name>Coffee.SoftMaskForUGUI.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Coffee.SoftMaskForUGUI.csproj">
+      <Project>{F0650976-3CF4-688C-C440-501E1C644AC4}</Project>
+      <Name>Coffee.SoftMaskForUGUI</Name>
+    </ProjectReference>
     <ProjectReference Include="AimingRig.csproj">
       <Project>{221E17B3-B190-F5BF-0465-C332A898ABA9}</Project>
       <Name>AimingRig</Name>

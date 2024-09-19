@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.coffee.softmask-for-ugui": "file:C:/Users/dyene/Downloads/Archives/SoftMaskForUGUI-main/SoftMaskForUGUI-main",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "1.1.4",
     "com.unity.cinemachine": "2.9.5",

@@ -110,7 +110,7 @@ public class HPSize : MonoBehaviour
         }
         UpdateText();
         UpdateBars();
-        UpdateAreaPosition();
+        //UpdateAreaPosition();
     }
 
     private void Update()

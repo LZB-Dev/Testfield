@@ -5,23 +5,103 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638440084065930184
-    m_Hash: 2707619437
+      ticks: 638622547709326695
+    m_Hash: 3227591509
   m_LockFileStatus:
     m_FilePath: C:/Users/dyene/Documents/Programming/Unity/Testfield/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638440084294963990
-    m_Hash: 1717924029
+      ticks: 638622547709368904
+    m_Hash: 1094812728
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
-  m_LocalFileStatus: []
+  m_LocalFileStatus:
+  - m_FilePath: C:\Users\dyene\Downloads\Archives\SoftMaskForUGUI-main\SoftMaskForUGUI-main/package.json
+    m_PathExists: 1
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 638620796350000000
+    m_Hash: 2629019945
+  - m_FilePath: C:\Users\dyene\Downloads\Archives\SoftMaskForUGUI-main\SoftMaskForUGUI-main
+    m_PathExists: 1
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 0
+    m_Hash: 0
 m_ProjectPath: C:/Users/dyene/Documents/Programming/Unity/Testfield/Packages
 m_EditorVersion: 2022.3.7f1 (b16b3b16c7a0)
 m_ResolvedPackages:
+- packageId: com.coffee.softmask-for-ugui@file:C:\Users\dyene\Downloads\Archives\SoftMaskForUGUI-main\SoftMaskForUGUI-main
+  testable: 0
+  isDirectDependency: 1
+  version: 2.3.7
+  source: 4
+  resolvedPath: C:\Users\dyene\Downloads\Archives\SoftMaskForUGUI-main\SoftMaskForUGUI-main
+  assetPath: Packages/com.coffee.softmask-for-ugui
+  name: com.coffee.softmask-for-ugui
+  displayName: UI Soft Mask
+  author:
+    name: mob-sakai
+    email: sakai861104@gmail.com
+    url: https://github.com/mob-sakai
+  category: 
+  type: 
+  description: 'UI Soft Mask is a smooth masking component for Unity UI (uGUI) elements.
+
+    By
+    using SoftMask instead of the default Mask component, you can beautifully represent
+    the rounded edges of UI elements.'
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - ui
+  - softmask
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: git+https://github.com/mob-sakai/SoftMaskForUGUI.git
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -114,6 +194,8 @@ m_ResolvedPackages:
     - 2.0.0-pre.3
     - 2.0.0-pre.4
     - 2.0.0
+    - 2.0.3
+    - 2.0.4
     compatible:
     - 1.1.4
     - 1.1.5
@@ -241,6 +323,8 @@ m_ResolvedPackages:
     - 2.9.4
     - 2.9.5
     - 2.9.7
+    - 2.10.0
+    - 2.10.1
     - 3.0.0-pre.3
     - 3.0.0-pre.4
     - 3.0.0-pre.5
@@ -249,9 +333,13 @@ m_ResolvedPackages:
     - 3.0.0-pre.8
     - 3.0.0-pre.9
     - 3.0.1
+    - 3.1.0
+    - 3.1.1
     compatible:
     - 2.9.5
     - 2.9.7
+    - 2.10.0
+    - 2.10.1
     - 3.0.0-pre.3
     - 3.0.0-pre.4
     - 3.0.0-pre.5
@@ -260,6 +348,8 @@ m_ResolvedPackages:
     - 3.0.0-pre.8
     - 3.0.0-pre.9
     - 3.0.1
+    - 3.1.0
+    - 3.1.1
     recommended: 2.9.7
     deprecated: []
   dependencies:
@@ -415,6 +505,10 @@ m_ResolvedPackages:
     - 2.1.0-preview.6
     - 2.1.0
     - 2.2.0
+    - 2.3.1
+    - 2.4.3
+    - 2.4.4
+    - 2.5.1
     compatible:
     - 2.0.5
     - 2.0.7
@@ -423,6 +517,10 @@ m_ResolvedPackages:
     - 2.1.0-preview.6
     - 2.1.0
     - 2.2.0
+    - 2.3.1
+    - 2.4.3
+    - 2.4.4
+    - 2.5.1
     recommended: 2.0.7
     deprecated: []
   dependencies: []
@@ -531,12 +629,16 @@ m_ResolvedPackages:
     - 3.0.25
     - 3.0.26
     - 3.0.27
+    - 3.0.28
+    - 3.0.31
     compatible:
     - 3.0.24
     - 3.0.25
     - 3.0.26
     - 3.0.27
-    recommended: 3.0.27
+    - 3.0.28
+    - 3.0.31
+    recommended: 3.0.31
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -795,11 +897,23 @@ m_ResolvedPackages:
     - 1.7.0
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.0
+    - 1.11.0
     compatible:
     - 1.6.3
     - 1.7.0
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.0
+    - 1.11.0
     recommended: 1.6.3
     deprecated: []
   dependencies:
@@ -916,6 +1030,8 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -935,6 +1051,8 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -1105,6 +1223,7 @@ m_ResolvedPackages:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -1113,12 +1232,15 @@ m_ResolvedPackages:
     - 3.2.0-pre.6
     - 3.2.0-pre.7
     - 3.2.0-pre.8
+    - 3.2.0-pre.9
+    - 3.2.0-pre.10
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -1127,9 +1249,11 @@ m_ResolvedPackages:
     - 3.2.0-pre.6
     - 3.2.0-pre.7
     - 3.2.0-pre.8
+    - 3.2.0-pre.9
+    - 3.2.0-pre.10
     - 4.0.0-pre.1
     - 4.0.0-pre.2
-    recommended: 3.0.8
+    recommended: 3.0.9
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -1279,6 +1403,7 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     compatible:
     - 1.7.5
     - 1.7.6
@@ -1289,21 +1414,22 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     recommended: 1.7.6
     deprecated: []
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -1367,6 +1493,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 3.0.0-exp.1
     - 3.0.0-exp.3
+    - 3.0.0-exp.4
     compatible:
     - 1.0.0
     recommended: 1.0.0
