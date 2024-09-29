@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Follow : MonoBehaviour
+public class Follow : MonoBehaviour //bap
 {
     public GameObject player;
     public Vector3 offset_3pv = new Vector3(0, 7, -9);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : MonoBehaviour //bap
 {
     [SerializeField] Rigidbody rb;
     [SerializeField] float moveSpeed = 15f;

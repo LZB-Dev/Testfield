@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public static class UIGradientUtils
+public static class UIGradientUtils //bap
 {
 	public struct Matrix2x3
 	{

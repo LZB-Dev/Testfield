@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu (fileName = "Trail Config", menuName = "Guns/Gun Trail Config", order = 4)]
-public class TrailConfig_ScriptableObject : ScriptableObject
+public class TrailConfig_ScriptableObject : ScriptableObject //bap
 {
     public Material Material;
     public Gradient Color;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NpcController : MonoBehaviour
+public class NpcController : MonoBehaviour //bap
 {
     [SerializeField] float moveSpeed = 15f;
 

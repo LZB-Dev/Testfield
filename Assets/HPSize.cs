@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class HPSize : MonoBehaviour
+public class HPSize : MonoBehaviour //bap
 {
     [Header("Refferences")]
     [SerializeField] RectTransform Bar;

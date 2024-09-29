@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class HUD : MonoBehaviour
+public class HUD : MonoBehaviour //bap
 {
     [SerializeField] private GameObject player;
     [SerializeField] private TextMeshProUGUI speedometer;
