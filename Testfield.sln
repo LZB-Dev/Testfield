@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.SoftMaskForUGUI", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.SoftMaskForUGUI.Editor", "Coffee.SoftMaskForUGUI.Editor.csproj", "{E8072140-15E3-2635-BF6B-ABD1D3BD5835}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{0B5CD9BC-E594-FA1F-E86D-737B96F5A1FE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimingRig", "AimingRig.csproj", "{221E17B3-B190-F5BF-0465-C332A898ABA9}"
 EndProject
 Global
@@ -27,6 +29,10 @@ Global
 		{E8072140-15E3-2635-BF6B-ABD1D3BD5835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8072140-15E3-2635-BF6B-ABD1D3BD5835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8072140-15E3-2635-BF6B-ABD1D3BD5835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B5CD9BC-E594-FA1F-E86D-737B96F5A1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B5CD9BC-E594-FA1F-E86D-737B96F5A1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B5CD9BC-E594-FA1F-E86D-737B96F5A1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B5CD9BC-E594-FA1F-E86D-737B96F5A1FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{221E17B3-B190-F5BF-0465-C332A898ABA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{221E17B3-B190-F5BF-0465-C332A898ABA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{221E17B3-B190-F5BF-0465-C332A898ABA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
