@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitProperty : MonoBehaviour
+public class UnitProperty : MonoBehaviour //bap
 {
     //Stats; HP - Health Points, SP - Shield Points, EP - Energy Points
     [SerializeField] private float MaxHP = 100;

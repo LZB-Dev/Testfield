@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitType : MonoBehaviour
+public class UnitType : MonoBehaviour //bap
 {
     [SerializeField] protected string _name;
     [SerializeField] protected Weapon _weapon;

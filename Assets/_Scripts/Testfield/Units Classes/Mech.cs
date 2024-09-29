@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mech : Unit
+public class Mech : Unit //bap
 {
     [SerializeField] protected float rotationSpeed; //7f;
     [SerializeField] protected UnitType unitType;

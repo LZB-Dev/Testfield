@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Controller : MonoBehaviour
+public class Player_Controller : MonoBehaviour //bap
 {
     [SerializeField] float moveSpeed = 15f;
     [SerializeField] float maxSpeed = 40f;

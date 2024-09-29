@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1973970594508231392}
   - component: {fileID: 1296493004379963526}
   m_Layer: 0
-  m_Name: Bullet Mark
+  m_Name: _Bullet Mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

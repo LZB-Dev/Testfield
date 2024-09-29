@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : MonoBehaviour //bap
 {
     [SerializeField] private GameObject gunPoint;
     [SerializeField] private GameObject bulletHole;

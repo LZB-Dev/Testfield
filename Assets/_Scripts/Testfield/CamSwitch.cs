@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
 
-public class CamSwitch : MonoBehaviour
+public class CamSwitch : MonoBehaviour //bap
 {
     [SerializeField] int priorityCamAmount = 10;
     [SerializeField] private PlayerInput playerInput;

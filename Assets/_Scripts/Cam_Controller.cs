@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cam_Controller : MonoBehaviour
+public class Cam_Controller : MonoBehaviour //bap
 {
     [SerializeField] GameObject player;
     [SerializeField] Vector3 offset = new Vector3(0, 3 - 3);

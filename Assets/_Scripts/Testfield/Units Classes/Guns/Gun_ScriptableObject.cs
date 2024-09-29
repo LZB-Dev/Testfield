@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Pool;
 
 [CreateAssetMenu (fileName = "Gun", menuName = "Guns/Gun", order = 0)]
-public class Gun_ScriptableObject : ScriptableObject
+public class Gun_ScriptableObject : ScriptableObject //bap
 {
     public GunType Type;
     public string Name;

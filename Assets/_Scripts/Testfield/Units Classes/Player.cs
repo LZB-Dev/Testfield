@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : Mech
+public class Player : Mech //bap
 {
     //State Variables
     [SerializeField] protected bool isBoosting = false;

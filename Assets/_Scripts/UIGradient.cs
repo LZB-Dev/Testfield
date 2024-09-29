@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [AddComponentMenu("UI/Effects/Gradient")]
-public class UIGradient : BaseMeshEffect
+public class UIGradient : BaseMeshEffect //bap
 {
     public Color m_color1 = Color.white;
     public Color m_color2 = Color.white;

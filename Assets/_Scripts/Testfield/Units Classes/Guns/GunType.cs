@@ -1,4 +1,4 @@
-public enum GunType
+public enum GunType //bap
 {
     Pistol,
     Assult_Rifle
